@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Посты из категории {{title}}{% endblock %}
+{% load static %}
+{% block content %}
+<main>
+    <section>
+	<div class="container">
+	    <h1>Посты из категории {{title}}</h1>
+	</div>
+    </section>
+	<div>
+		{% for post in object_list%}
+		<div>
+				<h3>{{post.title}}</h3>
+        <img src="{{ post.image.url }}" alt="image" width="430">
+        </div>
+		</div>
+		{% endfor %}
+    </div>
+</main>
+{% endblock %}
