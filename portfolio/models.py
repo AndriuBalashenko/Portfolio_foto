@@ -13,8 +13,8 @@ class Images(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Запись'
-        verbose_name_plural = 'Записи'
+        verbose_name = 'Работа'
+        verbose_name_plural = 'Работы'
 
 
 class Category(MPTTModel):
